@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+    max-height: 1000px;
+}
+/****************navbar***************/
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu--active{
+    background-color: rgb(89, 115, 243);
+    color: antiquewhite;
+    padding: 2%;
+}
+.menu--list:hover{
+    padding: 2%;
+    background-color: rgb(89, 115, 243);
+    color: antiquewhite;
+}
+
+/***************head-section*****************/
+.main{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/************start-section**************/
+.main--start-image{
+    background-image: url(../img/start.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    padding: 30%;
+    grid-area: start__center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main--logo{
+    background-color: black;
+    color: antiquewhite;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/***************service**************/
+.service__h3{
+    grid-area: h3__service;
+    margin-top: 15%;
+}
+
+.service{
+    grid-area: block__service;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.evening{
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.evening__h4{
+    font-size: 65%;
+    margin-bottom: 3%;
+}
+.evening__p{
+    font-size: 1vw;
+}
+
+.Adventure{
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adventure__h4{
+    font-size: 65%;
+    margin-bottom: 3%;
+}
+.adventure__p{
+    font-size: 1vw;
+}
+
+.Travel{
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.travel__h4{
+    font-size: 65%;
+    margin-bottom: 3%;
+}
+.travel__p{
+    font-size: 1vw;
+}
+
+.Party{
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.party__h4{
+    font-size: 65%;
+    margin-bottom: 3%;
+}
+.party__p{
+    font-size: 1vw;
+}
+/**************rooms**************/
+.rooms__h3{
+    grid-area: h3__rooms;
+    margin-top: 15%;
+}
+.rooms__h4{
+    background-color: rgb(84, 78, 78);
+}
+
+.rooms{
+    grid-area: block__rooms;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 30vh;
+}
+
+.rooms button:nth-child(1){
+    width: 30%;
+    color: antiquewhite;
+    background-image: url(../img/rum1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rooms button:nth-child(2){
+    width: 30%;
+    color: antiquewhite;
+    background-image: url(../img/rum2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rooms button:nth-child(3){
+    width: 30%;
+    color: antiquewhite;
+    background-image: url(../img/rum3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/********************sida2***********************/
+
+.main__img{
+    width: 100%;
+    height: 50%;
+    padding: 30%;
+    background-image: url(../img/pool.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main--srch{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+}
+
+.main__gallery{
+    width: 100%;
+    height: 40%;
+}
+
+.main--img{
+    width: 15vw;
+    height: 15vh;
+}
+
+/********************sida3************************/
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 30vh auto;
+    grid-template-areas: 
+    "main__image main__image main__image main__image main__image main__image"
+    "main__image main__image main__image main__image main__image main__image"
+    "main__image main__image main__image main__image main__image main__image"
+    "main__view main__view main__view main__view main__view main__view"
+    "main__view main__view main__view main__view main__view main__view"
+    "section__details section__details section__details section__details section__details section__details"
+    "section__details section__details section__details section__details section__details section__details"
+    "section__details section__details section__details section__details section__details section__details";
+}
+
+.main__image{
+    grid-area: main__image;
+    background-image: url(../img/rum1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    padding: 30%;
+}
+.main__view{
+    grid-area: main__view;
+    display: flex;
+    justify-content: center;
+}
+.main--image{
+    width: 10vw;
+    height: 10vh;
+}
+.main--image:hover{
+    padding: 3%;
+}
+
+.section__details{
+    grid-area: section__details;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+.main__details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail--p{
+    font-size: 5vw;
+}
+
+.main__info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
