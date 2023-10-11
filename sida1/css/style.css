@@ -4,40 +4,72 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 1000px;
-    max-height: 1000px;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 /****************navbar***************/
+.header{
+    width: 100%;
+}
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    width: 100%;
+    height: 10%;
+}
+
+.menu--logo{
+    width: 7vw;
+    height: 15vh;
 }
 
 .menu--active{
+    width: 10vw;
+}
+.menu--active:hover{
     background-color: rgb(89, 115, 243);
-    color: antiquewhite;
     padding: 2%;
+}
+.menu--list{
+    width: 7vw;
 }
 .menu--list:hover{
     padding: 2%;
     background-color: rgb(89, 115, 243);
-    color: antiquewhite;
 }
 
 /***************head-section*****************/
-.main{
+.main1{
     max-width: 100%;
     max-height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh auto;
+    grid-template-areas:
+    "main--start-image main--start-image main--start-image main--start-image main--start-image main--start-image"
+    "main--start-image main--start-image main--start-image main--start-image main--start-image main--start-image"
+    "main--start-image main--start-image main--start-image main--start-image main--start-image main--start-image"
+    "main--start-image main--start-image main--start-image main--start-image main--start-image main--start-image"
+    ". . . . . . "
+    ". . service__h3 service__h3 . ."
+    "service service service service service service"
+    "service service service service service service"
+    ". . . . . ."
+    ". . rooms__h3 rooms__h3 . ."
+    "rooms rooms rooms rooms rooms rooms"
+    "rooms rooms rooms rooms rooms rooms"
+    ;
 }
 
+
 /************start-section**************/
-.main--start-image{
+.main1--start-image{
     background-image: url(../img/start.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,8 +82,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: main--start-image;
 }
-.main--logo{
+.main1--logo{
     background-color: black;
     color: antiquewhite;
     padding: 10%;
@@ -64,6 +97,9 @@ body{
 .service__h3{
     grid-area: h3__service;
     margin-top: 15%;
+    grid-area: service__h3;
+    display: flex;
+    justify-content: center;
 }
 
 .service{
@@ -72,8 +108,12 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    grid-area: service;
 }
 .evening{
+    background-image: url(../img/08-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 15vw;
     height: 20vh;
     display: flex;
@@ -84,12 +124,17 @@ body{
 .evening__h4{
     font-size: 65%;
     margin-bottom: 3%;
+    color: antiquewhite;
 }
 .evening__p{
     font-size: 1vw;
+    color: antiquewhite;
 }
 
 .Adventure{
+    background-image: url(../img/äventyr.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 15vw;
     height: 20vh;
     display: flex;
@@ -100,12 +145,17 @@ body{
 .adventure__h4{
     font-size: 65%;
     margin-bottom: 3%;
+    color: antiquewhite;
 }
 .adventure__p{
     font-size: 1vw;
+    color: antiquewhite;
 }
 
 .Travel{
+    background-image: url(../img/resa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 15vw;
     height: 20vh;
     display: flex;
@@ -116,12 +166,17 @@ body{
 .travel__h4{
     font-size: 65%;
     margin-bottom: 3%;
+    color: antiquewhite;
 }
 .travel__p{
     font-size: 1vw;
+    color: antiquewhite;
 }
 
 .Party{
+    background-image: url(../img/party.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 15vw;
     height: 20vh;
     display: flex;
@@ -132,139 +187,190 @@ body{
 .party__h4{
     font-size: 65%;
     margin-bottom: 3%;
+    color: antiquewhite;
 }
 .party__p{
     font-size: 1vw;
+    color: antiquewhite;
 }
 /**************rooms**************/
 .rooms__h3{
     grid-area: h3__rooms;
     margin-top: 15%;
+    grid-area: rooms__h3;
+    display: flex;
+    justify-content: center;
 }
 .rooms__h4{
-    background-color: rgb(84, 78, 78);
+    background-color: rgb(163, 153, 153);
+    padding: 2%;
 }
 
 .rooms{
     grid-area: block__rooms;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     height: 30vh;
+    grid-area: rooms;
 }
 
 .rooms button:nth-child(1){
     width: 30%;
-    color: antiquewhite;
     background-image: url(../img/rum1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .rooms button:nth-child(2){
     width: 30%;
-    color: antiquewhite;
     background-image: url(../img/rum2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .rooms button:nth-child(3){
     width: 30%;
-    color: antiquewhite;
     background-image: url(../img/rum3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /********************sida2***********************/
-
-.main__img{
+.main2{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh auto;
+    grid-template-areas:
+    "main__img main__img main__img main__img main__img main__img"
+    "main__img main__img main__img main__img main__img main__img"
+    "main__img main__img main__img main__img main__img main__img"
+    ". . . . . ."
+    "main__srch main__srch main__srch main__srch main__srch main__srch"
+    ". . . . . . "
+    "main--srch main--srch main--srch main--srch main--srch main--srch"
+    "main--srch main--srch main--srch main--srch main--srch main--srch"
+    ". . . . . ."
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    ;
+}
+.main2__img{
     width: 100%;
     height: 50%;
     padding: 30%;
     background-image: url(../img/pool.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    grid-area: main__img;
 }
-
-.main--srch{
+.main2--logo{
+    background-color: black;
+    color: antiquewhite;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main2__srch{
+    width: 90%;
+    grid-area: main__srch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.main2--srch{
     margin: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    width: 90%;
+    grid-area: main--srch;
 }
 
-.main__gallery{
+.main2__gallery{
     width: 100%;
     height: 40%;
+    grid-area: main__gallery;
 }
 
-.main--img{
+.main2--img{
     width: 15vw;
     height: 15vh;
 }
 
 /********************sida3************************/
 
-.wrapper{
+.main3{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 30vh auto;
+    grid-template-rows: 20vh auto;
     grid-template-areas: 
     "main__image main__image main__image main__image main__image main__image"
     "main__image main__image main__image main__image main__image main__image"
-    "main__image main__image main__image main__image main__image main__image"
+    ". . . . . ."
     "main__view main__view main__view main__view main__view main__view"
     "main__view main__view main__view main__view main__view main__view"
-    "section__details section__details section__details section__details section__details section__details"
-    "section__details section__details section__details section__details section__details section__details"
-    "section__details section__details section__details section__details section__details section__details";
+    ". . . . . ."
+    "main__details main__details main__details main__info main__info main__info"
+    "main__details main__details main__details main__info main__info main__info"
+    ;
 }
 
-.main__image{
+.main3__image{
     grid-area: main__image;
     background-image: url(../img/rum1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50%;
+    height: 40%;
     padding: 30%;
 }
-.main__view{
-    grid-area: main__view;
+.main3--logo{
+    background-color: black;
+    color: antiquewhite;
+    padding: 10%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.main--image{
+.main3__view{
+    grid-area: main__view;
+    margin: 5%;
+
+}
+.main3--image{
     width: 10vw;
     height: 10vh;
 }
-.main--image:hover{
+.main3--image:hover{
     padding: 3%;
 }
-
-.section__details{
-    grid-area: section__details;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3%;
-}
-.main__details{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main3__details{
+    grid-area: main__details;
+    margin: 5%;
 }
 .detail--p{
     font-size: 5vw;
 }
 
-.main__info{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main3__info{
+    grid-area: main__info;
+    margin: 5%;
 }
