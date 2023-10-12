@@ -144,7 +144,7 @@ body{
 }
 
 .evening__h4{
-    font-size: 65%;
+    font-size: 2vw;
     margin-bottom: 3%;
     color: antiquewhite;
 }
@@ -165,7 +165,7 @@ body{
     align-items: center;
 }
 .adventure__h4{
-    font-size: 65%;
+    font-size: 2vw;
     margin-bottom: 3%;
     color: antiquewhite;
 }
@@ -186,7 +186,7 @@ body{
     align-items: center;
 }
 .travel__h4{
-    font-size: 65%;
+    font-size: 2vw;
     margin-bottom: 3%;
     color: antiquewhite;
 }
@@ -207,7 +207,7 @@ body{
     align-items: center;
 }
 .party__h4{
-    font-size: 65%;
+    font-size: 2vw;
     margin-bottom: 3%;
     color: antiquewhite;
 }
@@ -284,12 +284,13 @@ body{
     "main__img main__img main__img main__img main__img main__img"
     "main__img main__img main__img main__img main__img main__img"
     ". . . . . . "
-    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
-    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
-    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
     "om om om om om om"
     "om om om om om om"
     "om om om om om om"
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "ul2 ul2 ul2 ul2 ul2 ul2"
     ;
 }
 .main2__img{
@@ -315,6 +316,7 @@ body{
 .main2__gallery{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: 40%;
     grid-area: main__gallery;
@@ -329,6 +331,20 @@ body{
     grid-area: om;
     margin: 5%;
     width: 70%;
+    background-color: rgb(195, 195, 223);
+    padding: 2%;
+}
+
+.ul2{
+    grid-area: ul2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5%;
+    padding: 5%;
+    background-color: rgb(195, 195, 223);
+    }
 }
 
 /********************sida3************************/
@@ -399,4 +415,6 @@ body{
 .main3__info{
     grid-area: main__info;
     margin: 5%;
+    background-color: rgb(195, 195, 223);
+    width: 40%;
 }
