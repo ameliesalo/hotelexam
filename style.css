@@ -287,6 +287,9 @@ body{
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
+    "om om om om om om"
+    "om om om om om om"
+    "om om om om om om"
     ;
 }
 .main2__img{
@@ -320,6 +323,12 @@ body{
 .main2--img{
     width: 15vw;
     height: 15vh;
+}
+
+.om{
+    grid-area: om;
+    margin: 5%;
+    width: 70%;
 }
 
 /********************sida3************************/
