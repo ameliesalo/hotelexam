@@ -104,6 +104,7 @@ body{
 }
 .main1--logo{
     background-color: black;
+    opacity: 0.8;
     color: antiquewhite;
     padding: 10%;
     display: flex;
@@ -286,6 +287,7 @@ body{
 }
 .main2--logo{
     background-color: black;
+    opacity: 0.8;
     color: antiquewhite;
     padding: 10%;
     display: flex;
@@ -342,6 +344,7 @@ body{
 }
 .main3--logo{
     background-color: black;
+    opacity: 0.8;
     color: antiquewhite;
     padding: 10%;
     display: flex;
