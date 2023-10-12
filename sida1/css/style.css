@@ -15,6 +15,7 @@ body{
     width: 100%;
 }
 .menu{
+    grid-area: nav;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +46,15 @@ body{
 .menu--list:hover{
     padding: 2%;
     background-color: rgb(89, 115, 243);
+}
+
+.main2--srch{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
 }
 
 /***************head-section*****************/
@@ -283,14 +293,6 @@ body{
     align-items: center;
 }
 
-.main2--srch{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 2%;
-}
 .main2__gallery{
     width: 100%;
     height: 40%;
