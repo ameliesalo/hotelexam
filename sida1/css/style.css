@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2? family= Young+Serif & display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: serif;
 }
 body{
     max-width: 100vw;
@@ -18,11 +21,15 @@ body{
     list-style: none;
     width: 100%;
     height: 10%;
+    background-color: rgb(194, 194, 232);
 }
 
 .menu--logo{
+    background-color: black;
     width: 7vw;
-    height: 15vh;
+    height: 13vh;
+    justify-self: flex-start;
+    align-self: flex-start;
 }
 
 .menu--active{
@@ -121,6 +128,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .evening__h4{
     font-size: 65%;
     margin-bottom: 3%;
@@ -250,12 +258,7 @@ body{
     "main__img main__img main__img main__img main__img main__img"
     "main__img main__img main__img main__img main__img main__img"
     "main__img main__img main__img main__img main__img main__img"
-    ". . . . . ."
-    "main__srch main__srch main__srch main__srch main__srch main__srch"
     ". . . . . . "
-    "main--srch main--srch main--srch main--srch main--srch main--srch"
-    "main--srch main--srch main--srch main--srch main--srch main--srch"
-    ". . . . . ."
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
     "main__gallery main__gallery main__gallery main__gallery main__gallery main__gallery"
@@ -279,24 +282,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-.main2__srch{
-    width: 90%;
-    grid-area: main__srch;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-}
-.main2--srch{
-    margin: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 90%;
-    grid-area: main--srch;
-}
 
+.main2--srch{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2%;
+}
 .main2__gallery{
     width: 100%;
     height: 40%;
