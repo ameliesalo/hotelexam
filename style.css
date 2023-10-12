@@ -82,6 +82,8 @@ body{
     ". . rooms__h3 rooms__h3 . ."
     "rooms rooms rooms rooms rooms rooms"
     "rooms rooms rooms rooms rooms rooms"
+    "ul ul ul ul ul ul"
+    "ul ul ul ul ul ul"
     ;
 }
 
@@ -253,6 +255,15 @@ body{
     background-image: url(./img/rum3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.ul{
+    grid-area: ul;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 5%;
 }
 
 /********************sida2***********************/
