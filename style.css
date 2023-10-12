@@ -88,7 +88,7 @@ body{
 
 /************start-section**************/
 .main1--start-image{
-    background-image: url(../img/start.jpeg);
+    background-image: url(./img/start.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -130,7 +130,7 @@ body{
     grid-area: service;
 }
 .evening{
-    background-image: url(../img/08-night.jpg);
+    background-image: url(./img/08-night.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 15vw;
@@ -152,7 +152,7 @@ body{
 }
 
 .Adventure{
-    background-image: url(../img/äventyr.jpeg);
+    background-image: url(./img/äventyr.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 15vw;
@@ -173,7 +173,7 @@ body{
 }
 
 .Travel{
-    background-image: url(../img/resa.jpeg);
+    background-image: url(./img/resa.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 15vw;
@@ -194,7 +194,7 @@ body{
 }
 
 .Party{
-    background-image: url(../img/party.jpeg);
+    background-image: url(./img/party.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 15vw;
@@ -238,19 +238,19 @@ body{
 
 .rooms button:nth-child(1){
     width: 30%;
-    background-image: url(../img/rum1.jpeg);
+    background-image: url(./img/rum1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .rooms button:nth-child(2){
     width: 30%;
-    background-image: url(../img/rum2.jpeg);
+    background-image: url(./img/rum2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .rooms button:nth-child(3){
     width: 30%;
-    background-image: url(../img/rum3.jpeg);
+    background-image: url(./img/rum3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -280,7 +280,7 @@ body{
     width: 100%;
     height: 50%;
     padding: 30%;
-    background-image: url(../img/pool.jpeg);
+    background-image: url(./img/pool.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main__img;
@@ -335,7 +335,7 @@ body{
 
 .main3__image{
     grid-area: main__image;
-    background-image: url(../img/rum1.jpeg);
+    background-image: url(./img/pool.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
