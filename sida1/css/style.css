@@ -27,6 +27,7 @@ body{
 
 .menu--logo{
     background-color: black;
+    opacity: 0.5;
     width: 7vw;
     height: 13vh;
     justify-self: flex-start;
@@ -294,6 +295,8 @@ body{
 }
 
 .main2__gallery{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 40%;
     grid-area: main__gallery;
@@ -347,6 +350,8 @@ body{
     align-items: center;
 }
 .main3__view{
+    display: flex;
+    flex-wrap: wrap;
     grid-area: main__view;
     margin: 5%;
 
