@@ -19,7 +19,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
     width: 100%;
     height: 10%;
     background-color: rgb(194, 194, 232);
@@ -34,13 +33,6 @@ body{
     align-self: flex-start;
 }
 
-.menu--active{
-    width: 10vw;
-}
-.menu--active:hover{
-    background-color: rgb(89, 115, 243);
-    padding: 2%;
-}
 .menu--list{
     width: 7vw;
 }
@@ -49,7 +41,7 @@ body{
     background-color: rgb(89, 115, 243);
 }
 
-.main2--srch{
+.srch{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -90,12 +82,12 @@ body{
 
 /************start-section**************/
 .main1--start-image{
-    background-image: url(./img/start.jpeg);
+    background-image: url(./img/08-night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50%;
-    padding: 30%;
+    height: 90vh;
+    margin: 2%;
     grid-area: start__center;
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +100,8 @@ body{
     background-color: black;
     opacity: 0.8;
     color: antiquewhite;
-    padding: 10%;
+    width: 20vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +144,13 @@ body{
 .evening__p{
     font-size: 1vw;
     color: antiquewhite;
+}
+.evening:hover{
+    width: 15vw;
+    height: 20vh;
+    background-color: black;
+    color: antiquewhite;
+
 }
 
 .Adventure{
@@ -263,7 +263,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 5%;
+    margin-top: 5%;
     padding: 5%;
     background-color: rgb(195, 195, 223);
 }
@@ -295,18 +295,22 @@ body{
 }
 .main2__img{
     width: 100%;
-    height: 50%;
-    padding: 30%;
-    background-image: url(./img/pool.jpeg);
+    height: 60vh;
+    margin: 2%;
+    background-image: url(./img/09-night.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main__img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main2--logo{
     background-color: black;
     opacity: 0.8;
     color: antiquewhite;
-    padding: 10%;
+    width: 20vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -341,11 +345,10 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 5%;
+    margin-top: 5%;
     padding: 5%;
     background-color: rgb(195, 195, 223);
     }
-}
 
 /********************sida3************************/
 
@@ -368,23 +371,29 @@ body{
     ". . . . . ."
     "main__details main__details main__details main__info main__info main__info"
     "main__details main__details main__details main__info main__info main__info"
+    ". . . . . ."
+    "ul3 ul3 ul3 ul3 ul3 ul3"
     ;
 }
 
 .main3__image{
     grid-area: main__image;
-    background-image: url(./img/rum1.jpeg);
+    background-image: url(./img/09-night.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30%;
-    padding: 30%;
+    height: 100vh;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main3--logo{
     background-color: black;
     opacity: 0.8;
     color: antiquewhite;
-    padding: 10%;
+    width: 20vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -398,12 +407,12 @@ body{
 
 }
 .main3--image{
-    width: 10vw;
-    height: 10vh;
+    width: 20vw;
+    height: 20vh;
 }
 .main3--image:hover{
-    width: 15vw;
-    height: 15vh;
+    width: 35vw;
+    height: 35vh;
 }
 .main3__details{
     grid-area: main__details;
@@ -416,6 +425,18 @@ body{
 .main3__info{
     grid-area: main__info;
     margin: 5%;
+    padding: 2%;
     background-color: rgb(195, 195, 223);
     width: 40%;
 }
+
+.ul3{
+    grid-area: ul3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    background-color: rgb(195, 195, 223);
+    }
