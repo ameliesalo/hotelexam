@@ -28,7 +28,7 @@ body{
     background-color: black;
     opacity: 0.5;
     width: 6vw;
-    height: 13vh;
+    height: 14vh;
     justify-self: flex-start;
     align-self: flex-start;
 }
@@ -144,13 +144,6 @@ body{
 .evening__p{
     font-size: 1vw;
     color: antiquewhite;
-}
-.evening:hover{
-    width: 15vw;
-    height: 20vh;
-    background-color: black;
-    color: antiquewhite;
-
 }
 
 .Adventure{
@@ -382,7 +375,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     margin: 2%;
     display: flex;
     justify-content: center;
