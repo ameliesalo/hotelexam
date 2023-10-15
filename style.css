@@ -22,6 +22,7 @@ body{
     width: 100%;
     height: 10%;
     background-color: rgb(194, 194, 232);
+    border: solid 1px black;
 }
 
 .menu--logo{
@@ -44,10 +45,29 @@ body{
 .srch{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
+    height: 20vh;
     margin-top: 5%;
+    background-color: rgb(179, 174, 174);
+    border: solid 1px black;
+}
+
+.srch--field{
+    border: solid black 1px;
+    width: 10vw;
+    height: 5vh;
+}
+.srch--field:placeholder-shown{
+    font-size: 1.5vw;
+}
+.srch--button{
+    width: 10vw;
+    height: 5vh;
+    background-color: rgba(168, 101, 230, 0.767);
+    border: solid 1px black;
+    font-size: 1.5vw;
 }
 
 /***************head-section*****************/
@@ -145,6 +165,9 @@ body{
     font-size: 1vw;
     color: antiquewhite;
 }
+.evening:hover{
+    background: black;
+}
 
 .Adventure{
     background-image: url(./img/äventyr.jpeg);
@@ -165,6 +188,9 @@ body{
 .adventure__p{
     font-size: 1vw;
     color: antiquewhite;
+}
+.Adventure:hover{
+    background: black;
 }
 
 .Travel{
@@ -187,7 +213,9 @@ body{
     font-size: 1vw;
     color: antiquewhite;
 }
-
+.Travel:hover{
+    background: black;
+}
 .Party{
     background-image: url(./img/party.jpeg);
     background-repeat: no-repeat;
@@ -207,6 +235,9 @@ body{
 .party__p{
     font-size: 1vw;
     color: antiquewhite;
+}
+.Party:hover{
+    background: black;
 }
 /**************rooms**************/
 .rooms__h3{
@@ -258,7 +289,8 @@ body{
     width: 100%;
     margin-top: 5%;
     padding: 5%;
-    background-color: rgb(195, 195, 223);
+    background-color: rgb(194, 194, 232);
+    border: solid 1px black;
 }
 
 /********************sida2***********************/
@@ -328,8 +360,9 @@ body{
     grid-area: om;
     margin: 5%;
     width: 70%;
-    background-color: rgb(195, 195, 223);
+    background-color: rgb(194, 194, 232);
     padding: 2%;
+    border: solid 1px black;
 }
 
 .ul2{
@@ -340,7 +373,8 @@ body{
     width: 100%;
     margin-top: 5%;
     padding: 5%;
-    background-color: rgb(195, 195, 223);
+    background-color: rgb(194, 194, 232);
+    border: solid 1px black;
     }
 
 /********************sida3************************/
@@ -417,10 +451,11 @@ body{
 
 .main3__info{
     grid-area: main__info;
-    margin: 5%;
-    padding: 2%;
-    background-color: rgb(195, 195, 223);
-    width: 40%;
+    background-color: rgb(194, 194, 232);
+    border: solid 1px black;
+    width: 25vw;
+    height: auto;
+    list-style: none;
 }
 
 .ul3{
@@ -431,5 +466,6 @@ body{
     width: 100%;
     margin-top: 5%;
     padding: 5%;
-    background-color: rgb(195, 195, 223);
+    background-color: rgb(194, 194, 232);
+    border: solid 1px black;
     }
